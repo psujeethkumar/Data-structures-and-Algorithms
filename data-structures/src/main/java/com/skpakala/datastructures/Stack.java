@@ -1,52 +1,58 @@
 package com.skpakala.datastructures;
 
+/**
+ * Implementation of Stack data structure using array.
+ * @author Sujeeth Pakala
+ *
+ */
 public class Stack {
 
-    private int top = -1;
-    // private int stackSize = 0;
-    private int[] stack;
+	private int top = -1;
+	private int[] stack;
 
-    /**
-     * 
-     * @param stackSize
-     */
-    public Stack(int stackSize) {
-        // this.stackSize = stackSize;
-        stack = new int[stackSize];
-    }
+	/**
+	 * 
+	 * @param stackSize
+	 */
+	public Stack(int stackSize) {
+		// this.stackSize = stackSize;
+		stack = new int[stackSize];
+	}
 
-    /**
-     * 
-     * @param element
-     */
-    public void push(int element) {
-        stack[++top] = element;
-    }
+	/**
+	 * 
+	 * @param element
+	 */
+	public void push(int element) {
+		stack[++top] = element;
+	}
 
-    /**
-     * 
-     * @return
-     */
-    public int pop() {
-        int result = stack[top];
-        top--;
-        return result;
-    }
+	/**
+	 * 
+	 * @return
+	 */
+	public int pop() {
+		return stack[top--];
+	}
 
-    /**
-     * 
-     * @return
-     */
-    public int peek() {
-        return stack[top];
-    }
+	/**
+	 * 
+	 * @return
+	 */
+	public int peek() {
+		return stack[top];
+	}
 
-    /**
-     * 
-     * @return
-     */
-    public boolean isEmpty() {
-        return stack.length > 0 ? true : false;
-    }
+	/**
+	 * 
+	 * @return
+	 */
+	public boolean isEmpty() {
+		return top == -1 ? true : false;
+	}
 
+	public int size() {
+		return top + 1;
+
+	}
 }
