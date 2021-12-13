@@ -1,11 +1,13 @@
-package com.skpakala.datastructures;
+package com.skpakala.datastructures.impl;
+
+import com.skpakala.datastructures.DataStructure;
 
 /**
  * Implementation of Stack data structure using array.
  * @author Sujeeth Pakala
  *
  */
-public class Stack {
+public class Stack  implements DataStructure {
 
 	private int top = -1;
 	private int[] stack;
@@ -19,38 +21,27 @@ public class Stack {
 		stack = new int[stackSize];
 	}
 
-	/**
-	 * 
-	 * @param element
-	 */
+	@Override
 	public void push(int element) {
 		stack[++top] = element;
 	}
 
-	/**
-	 * 
-	 * @return
-	 */
+	@Override
 	public int pop() {
 		return stack[top--];
 	}
 
-	/**
-	 * 
-	 * @return
-	 */
+	@Override
 	public int peek() {
 		return stack[top];
 	}
 
-	/**
-	 * 
-	 * @return
-	 */
+	@Override
 	public boolean isEmpty() {
 		return top == -1 ? true : false;
 	}
 
+	@Override
 	public int size() {
 		return top + 1;
 
