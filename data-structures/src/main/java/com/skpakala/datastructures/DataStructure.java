@@ -12,7 +12,7 @@ public interface DataStructure {
 	 * 
 	 * @param element
 	 */
-	public void push(int element);
+	public int push(int element);
 
 	
 	/**

@@ -1,13 +1,11 @@
 /**
  * 
  */
-package com.skpakala.datastructures;
+package com.skpakala.datastructures.impl;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import org.junit.jupiter.api.Test;
-
-import com.skpakala.datastructures.impl.Stack;
 
 /**
  * 

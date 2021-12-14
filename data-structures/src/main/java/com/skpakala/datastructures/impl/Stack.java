@@ -9,7 +9,7 @@ import com.skpakala.datastructures.DataStructure;
  */
 public class Stack  implements DataStructure {
 
-	private int top = -1;
+	private int stackIndex = -1;
 	private int[] stack;
 
 	/**
@@ -22,28 +22,29 @@ public class Stack  implements DataStructure {
 	}
 
 	@Override
-	public void push(int element) {
-		stack[++top] = element;
+	public int push(int element) {
+		stack[++stackIndex] = element;
+		return element;
 	}
 
 	@Override
 	public int pop() {
-		return stack[top--];
+		return stack[stackIndex--];
 	}
 
 	@Override
 	public int peek() {
-		return stack[top];
+		return stack[stackIndex];
 	}
 
 	@Override
 	public boolean isEmpty() {
-		return top == -1 ? true : false;
+		return stackIndex == -1 ? true : false;
 	}
 
 	@Override
 	public int size() {
-		return top + 1;
+		return stackIndex + 1;
 
 	}
 }
