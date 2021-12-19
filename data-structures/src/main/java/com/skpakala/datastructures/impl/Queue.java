@@ -14,7 +14,6 @@ public class Queue implements DataStructure {
 	private int[] queue;
 
 	public Queue(int queueSize) {
-
 		queue = new int[queueSize];
 	}
 
