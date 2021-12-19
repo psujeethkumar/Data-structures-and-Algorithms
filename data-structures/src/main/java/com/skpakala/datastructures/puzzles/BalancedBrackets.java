@@ -28,7 +28,6 @@ import com.skpakala.datastructures.impl.StackObject;
 
 public class BalancedBrackets {
 
-	private static List<Character> openingBrackets = new ArrayList<Character>();
 	private Map<Character, Character> bracketPairs = new HashMap<Character, Character>();
 
 	private StackObject stack;
