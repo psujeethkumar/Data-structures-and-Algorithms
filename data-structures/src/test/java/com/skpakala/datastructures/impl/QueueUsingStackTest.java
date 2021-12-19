@@ -32,10 +32,14 @@ public class QueueUsingStackTest {
 		queue.push(100);
 		queue.push(200);
 		queue.push(300);
-		assertTrue(queue.size() == 3);
+		queue.push(400);
+		queue.push(500);
+		assertTrue(queue.size() == 5);
 		assertTrue(queue.pop() == 100);
 		assertTrue(queue.pop() == 200);
 		assertTrue(queue.pop() == 300);
+		assertTrue(queue.pop() == 400);
+		assertTrue(queue.pop() == 500);
 		assertTrue(queue.size() == 0);
 		assertTrue(queue.isEmpty());
 	}

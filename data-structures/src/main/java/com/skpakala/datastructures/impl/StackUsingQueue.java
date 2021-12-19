@@ -5,41 +5,46 @@ import com.skpakala.datastructures.DataStructure;
 /**
  * 
  * @author Sujeeth Pakala
+ * Complexity - Amortised O(1)
  *
  */
 
 public class StackUsingQueue implements DataStructure {
 	
-//	private Queue
+	private Queue queue ;
+	
+	public StackUsingQueue(int queueSize) {
+		queue = new Queue(queueSize);
+	}
+	
 
 	@Override
 	public int push(int element) {
-		// TODO Auto-generated method stub
-		return 0;
+		queue.push(element);
+		for(int index  = 0; index < queue.size()-1; index ++) {
+			queue.push(queue.pop());
+		}
+		return queue.peek();
 	}
 
 	@Override
 	public int pop() {
-		// TODO Auto-generated method stub
-		return 0;
+		return queue.pop();
 	}
 
 	@Override
 	public int peek() {
-		// TODO Auto-generated method stub
-		return 0;
+		return queue.peek();
 	}
 
 	@Override
 	public boolean isEmpty() {
-		// TODO Auto-generated method stub
-		return false;
+		return queue.isEmpty();
 	}
 
 	@Override
 	public int size() {
-		// TODO Auto-generated method stub
-		return 0;
+		return queue.size();
 	}
 
 }
