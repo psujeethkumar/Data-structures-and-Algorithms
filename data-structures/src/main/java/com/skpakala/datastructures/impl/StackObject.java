@@ -1,39 +1,34 @@
 package com.skpakala.datastructures.impl;
 
-import com.skpakala.datastructures.DataStructure;
+import com.skpakala.datastructures.DataStructureObject;
 
-/**
- * Implementation of basic Stack data structure using array.
- * @author Sujeeth Pakala
- *
- */
-public class Stack  implements DataStructure {
+public class StackObject implements DataStructureObject{
 
 	private int stackIndex = -1;
-	private int[] stack;
+	private Object[] stack;
 
 	/**
 	 * 
 	 * @param stackSize
 	 */
-	public Stack(int stackSize) {
+	public StackObject(int stackSize) {
 		// this.stackSize = stackSize;
-		stack = new int[stackSize];
+		stack = new Object[stackSize];
 	}
 
 	@Override
-	public int push(int element) {
+	public Object push(Object element) {
 		stack[++stackIndex] = element;
 		return element;
 	}
 
 	@Override
-	public int pop() {
+	public Object pop() {
 		return stack[stackIndex--];
 	}
 
 	@Override
-	public int peek() {
+	public Object peek() {
 		return stack[stackIndex];
 	}
 
@@ -47,4 +42,6 @@ public class Stack  implements DataStructure {
 		return stackIndex + 1;
 
 	}
+
+
 }

@@ -4,6 +4,12 @@ import static org.junit.Assert.assertTrue;
 
 import org.junit.jupiter.api.Test;
 
+
+/**
+ * Unit test case for QueueUsingStack implementation
+ * @author Sujeeth Pakala
+ *
+ */
 public class QueueUsingStackTest {
 
 
