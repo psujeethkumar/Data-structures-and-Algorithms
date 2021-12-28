@@ -1,4 +1,4 @@
-package com.skpakala.algotithms.complexity.utils;
+package com.skpakala.algotithms.bigo.utils;
 
 /**
  * Scraap class to illustrate some loops

@@ -1,4 +1,4 @@
-package com.skpakala.algotithms.complexity.challenges;
+package com.skpakala.algotithms.bigo.practice;
 
 /**
  * Compute the Big O of an algorithm that involves nested loops, and increments the loop variables through multiplication.

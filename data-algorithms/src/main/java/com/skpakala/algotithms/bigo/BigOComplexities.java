@@ -1,4 +1,4 @@
-package com.skpakala.algotithms.complexity;
+package com.skpakala.algotithms.bigo;
 
 /**
  * 

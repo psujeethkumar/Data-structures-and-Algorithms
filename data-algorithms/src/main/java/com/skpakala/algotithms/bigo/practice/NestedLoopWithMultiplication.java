@@ -1,4 +1,4 @@
-package com.skpakala.algotithms.complexity.challenges;
+package com.skpakala.algotithms.bigo.practice;
 
 /**
  * Compute the Big O of an algorithm that involves nested loops, and increments the loop variables through multiplication.
@@ -27,6 +27,25 @@ public class NestedLoopWithMultiplication {
 			var *= 2; // (log_2(n))
 		}
 		System.out.println("Sum :" + sum); // 1
+	}
+
+	/**
+	 * Outer loop complexity : 2(n+1)
+	 * Inner loop complexity : 2(n+1)
+	 * Aggregate : 4(n+1)
+	 * Dropping constants, complexity is O(n).
+	 * Tip :
+	 * - Inner loop is independent of outer loop in terms of number of time it iterates & since they both run for a fixed number of times,
+	 * each complexities must be aggregated.
+	 * - When the outer or inner loops are running for a variable number of times,
+	 * then resulting complexity if the product of each loops complexity.
+	 */
+	public void nestedLoppFor() {
+		for (int i = 0; i < 500; i++) {
+			for (int j = 0; j < 1000; j++) {
+				System.out.println(j);
+			}
+		}
 	}
 
 }

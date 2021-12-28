@@ -1,4 +1,4 @@
-package com.skpakala.algotithms.complexity.challenges;
+package com.skpakala.algotithms.bigo.practice;
 
 /**
  * Compute Big(O) of an algorithm that involves nested loops and the loop variables decrement.

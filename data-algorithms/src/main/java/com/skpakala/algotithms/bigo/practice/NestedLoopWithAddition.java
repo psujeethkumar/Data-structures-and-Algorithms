@@ -1,4 +1,4 @@
-package com.skpakala.algotithms.complexity.challenges;
+package com.skpakala.algotithms.bigo.practice;
 
 /**
  * 
