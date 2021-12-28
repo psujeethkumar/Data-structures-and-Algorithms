@@ -11,10 +11,15 @@ public class NestedLoopWithMultiplicationBasic {
 	/**
 	 * Aggregate :
 	 * => 4 + (log_3(n)) + 1 + (log_3(n)) + log_3(n) (2 + n) + log_3 ((n+2)/2) +1
-	 * => 6 + log_3( 1 + 1 + 2 + n + (2*n + 2)/2 )
-	 * => 6 + log_3 ( 8 + 2*n + 2*n + 2)/2 
-	 * => (12 + 10 * log_3(n) + 4 * n * log_3(3))/2	 * 
-	 * => BigO = n * log (n)
+	 * => 6 + log_3( 1 + 1 + 2 + n + (2 * n + 2)/2 )
+	 * => 6 + log_3 ( 8 + 2 * n + 2 * n + 2)/2 
+	 * => (12 + 10 * log_3(n) + 4 * n * log_3(3)) / 2
+	 * Dropping leading constants => log_3(n) + n * log_3(n)
+	 * Dropping lower order terms => n * log_3(n)
+	 * => n * (log_2(n) / log_2(3))
+	 * => n * (log_2(n) / 1.585)
+	 * Dropping constants => n * log_2(n)	 
+	 * => BigO = n * log_2 (n) 
 	 */
 	public void nestedLoop() {
 		int n = 10; // 1
