@@ -1,5 +1,6 @@
 <b>List of Data structures: </b>
 
+
 1. [Arrays](/docs/Arrays.md)
  
 2. Linked Lists
