@@ -1,4 +1,4 @@
-package com.skpakala.datastructures.arrays.challendges;
+package com.skpakala.datastructures.arrays.challenges;
 
 /**
  * Utility class providing commonly used functions on arrays.

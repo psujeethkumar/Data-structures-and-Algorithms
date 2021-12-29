@@ -1,4 +1,4 @@
-package com.skpakala.datastructures.arrays.challendges;
+package com.skpakala.datastructures.arrays.challenges;
 
 /**
  * Problem statement : Given an array of size n, remove all even integers from it.
