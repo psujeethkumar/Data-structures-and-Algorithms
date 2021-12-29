@@ -10,7 +10,11 @@ package com.skpakala.algotithms.bigo.practice;
 public class NestedLoopWithModulo {
 
 	/**
+	 * Case 1 : m == n :
+	 * Case 2 : m < n  :
+	 * Case 3 : m > n  :
 	 * 
+	 * Answer: O(nˆ2)
 	 * 
 	 */
 	public void nestedLoop() {

@@ -71,7 +71,7 @@ public class BigOComplexities {
 	}
 
 	/**
-	 * Inner loop (n = numberOfOuterIterations) : (2n+2) + cn [ assuming it runs for m times]
+	 * Inner loop (n = numberOfInnerIterations) : (2n+2) + cn [ assuming it runs for m times]
 	 * Outer loop (n = numberOfOuterIterations) : (2n + 2) + pn [ where p is complexity of inner loop]
 	 * => 2n + 2 + 2nˆ2 + 2n + cnˆ2 => 4n + 2 + (c+2)nˆ2
 	 * Resulting time complexity : O(nˆ2)
@@ -89,7 +89,7 @@ public class BigOComplexities {
 	}
 
 	/**
-	 * Running complexity : O(log (limit) ~ exponentialIncrement)
+	 * Running complexity : O(log_exponentialIncrement (limit))
 	 * 
 	 * Tip: Within a loop, when elements in problem space gets halved each time, it is most probably in O(log n) runtime.
 	 */
