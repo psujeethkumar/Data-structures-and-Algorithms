@@ -1,6 +1,6 @@
 <b>List of Data structures: </b>
 
-1. Arrays (docs/Arrays.md)
+1. [Arrays](/docs/Arrays.md)
  
 2. Linked Lists
 
@@ -15,3 +15,4 @@
 7. Heaps
 
 8. Hash Tables
+
