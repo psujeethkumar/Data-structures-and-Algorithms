@@ -1,6 +1,7 @@
 package com.skpakala.datastructures.arrays;
 
 /**
+ * Quick introduction to simple arrays
  * 
  * @author Sujeeth Pakala
  *
