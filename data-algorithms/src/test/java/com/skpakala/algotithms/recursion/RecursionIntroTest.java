@@ -26,6 +26,9 @@ public class RecursionIntroTest {
 
 		System.out.println("----");
 		System.out.println(recursion.printSum(5));
+		
+		System.out.println("----");
+		System.out.println(recursion.factorial(5));
 	}
 
 }

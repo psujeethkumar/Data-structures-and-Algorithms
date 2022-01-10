@@ -106,5 +106,18 @@ public class RecursionIntro {
 			return number + printSum(number - 1);
 		}
 	}
+	
+	/**
+	 * Factorial of number without parameterised recursion using back tracking.
+	 * 
+	 * @param sum
+	 */
+	int factorial(int number) {
+		if (number == 0) {
+			return 1;
+		} else {
+			return number * factorial(number - 1);
+		}
+	}
 
 }
