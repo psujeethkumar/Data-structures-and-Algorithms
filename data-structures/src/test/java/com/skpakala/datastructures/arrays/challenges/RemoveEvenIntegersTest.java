@@ -1,5 +1,7 @@
 package com.skpakala.datastructures.arrays.challenges;
 
+import com.skpakala.datastructures.util.ArrayUtils;
+
 /**
  * Test case for RemoveEvenIntegers.
  * 
