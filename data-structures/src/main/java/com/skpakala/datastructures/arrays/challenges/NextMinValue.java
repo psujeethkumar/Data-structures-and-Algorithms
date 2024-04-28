@@ -1,7 +1,7 @@
 package com.skpakala.datastructures.arrays.challenges;
 
 /**
- * Given an array of size "n", find the minimum value in the array.
+ * Given an array of size "n", find the second minimum value in the array.
  * 
  * @author Sujeeth Pakala
  *
@@ -18,18 +18,18 @@ public class NextMinValue {
 	 * @return
 	 */
 	int findMinimum(int[] arr) {
-		int max = arr[0];
+		int min = arr[0];
 		for (int x = 0; x < arr.length ; x++) {
-			if(arr[x] > max) {
-				max = arr[x];
+			if(arr[x] < min) {
+				min = arr[x];
 			}
 		}
-		int min2 = max +1;
+		int nextMin = Integer.MAX_VALUE;
 		for (int x = 0; x < arr.length ; x++) {
-			if(arr[x] > min2 && min2 > max) {
-				min2 = arr[x];
+			if(arr[x] > min && arr[x] < nextMin) {
+				nextMin = arr[x];
 			}
 		}
-		return min2;
+		return nextMin;
 	}
 }
